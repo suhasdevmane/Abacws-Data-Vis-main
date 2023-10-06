@@ -24,14 +24,14 @@ services:
     restart: always
 
   api:
-    image: ghcr.io/randomman552/abacws-api:latest
+    image: ghcr.io/suhasdevmane/abacws-api:latest
     container_name: abacws-api
     restart: always
     depends_on:
       - mongo
 
   visualiser:
-    image: ghcr.io/randomman552/abacws-visualiser:latest
+    image: ghcr.io/suhasdevmane/abacws-visualiser:latest
     container_name: abacws-visualiser
     restart: always
     depends_on:
